@@ -11,6 +11,6 @@
 
 <h3>Lessons</h3>
 
-<p>1) Feature Selection</p>
+<a href="https://github.com/jchiefelk/Algorithms/tree/master/feature_selection">1) Feature Selection</a>
 
-<p>2) Face Recognition</p>
+<a href="https://github.com/jchiefelk/Algorithms/tree/master/facerecognition">2) Face Recognition</a>
