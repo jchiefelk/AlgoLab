@@ -48,6 +48,7 @@ class FeatureDetect(Data):
 			kp = sift.detect(gray,None)	
 			img=cv2.drawKeypoints(gray,kp)
 			cv2.imwrite('sift_interest_points.jpg',img)
+			cv2.imshow('interest points',img)
 			if cv2.waitKey(1) & 0xFF ==ord('q'):
 				break
 #
