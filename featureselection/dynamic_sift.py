@@ -2,14 +2,11 @@ import cv2
 import numpy as np
 import multiprocessing
 
-
 class Data:
 	image = 'None'
 
 	def _init_(self):
 		print('Image Data')
-
-
 
 class VideoFeed(Data):
 	# frame = cv2.imread('sbw.jpg')
@@ -27,7 +24,7 @@ class VideoFeed(Data):
 			gray = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
 			frame_img = gray
 			Data.image = gray
-			cv2.imshow('video',Data.image)
+			# cv2.imshow('video',Data.image)
 			cv2.imwrite('frame.jpg',frame_img)
 			if  cv2.waitKey(1) & 0xFF == ord('q'):
 				break
@@ -47,7 +44,7 @@ class FeatureDetect(Data):
 			gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 			kp = sift.detect(gray,None)	
 			img=cv2.drawKeypoints(gray,kp)
-			cv2.imwrite('sift_interest_points.jpg',img)
+			# cv2.imwrite('sift_interest_points.jpg',img)
 			cv2.imshow('interest points',img)
 			if cv2.waitKey(1) & 0xFF ==ord('q'):
 				break
