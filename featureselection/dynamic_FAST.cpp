@@ -23,6 +23,7 @@ int main(int, char**)
     vector<cv::KeyPoint>::iterator it;
     vector<cv::Point2f> points;
     ofstream outfile1,outfile2,outfile3;
+    int threshold=15;
     for(;;)
     {
         Mat frame;
@@ -32,29 +33,12 @@ int main(int, char**)
         //
         src = frame;
         cvtColor(src, src, CV_BGR2GRAY);
-        SIFT sift(500,1,0.1);
-        sift(src, src, keypoints, descriptors, false);
-        for(it=keypoints.begin(); it!=keypoints.end();it++){
-            points.push_back(it->pt);
-        }
-        Mat pointmatrix(points);
-        outfile1.open("points.txt");
-        outfile1 << pointmatrix;
-        outfile1.close();
-        outfile2.open("descriptors.txt");
-        outfile2 << descriptors;
-        outfile2.close();
-        outfile3.open("src.txt");
-        outfile3 << src;
-        outfile3.close();
+        // SIFT sift(500,1,0.1);
+        // sift(src, src, keypoints, descriptors, false);
+        FAST(src,keypoints,threshold,true);
         drawKeypoints(src, keypoints, dest);
-        
         imshow("Sift", dest);
-        // Video
-        // cvtColor(frame, edges, COLOR_BGR2GRAY);
-        // GaussianBlur(edges, edges, Size(7,7), 1.5, 1.5);
-        // Canny(edges, edges, 0, 30, 3);
-        // imshow("edges", edges);
+ 
         if(waitKey(30) >= 0) break;
     }
     // the camera will be deinitialized automatically in VideoCapture destructor
