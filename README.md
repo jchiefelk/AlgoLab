@@ -1,4 +1,4 @@
-<h2> Algorithms </h2>
+<h2> Algo Lab </h2>
 
 <p>
 I started The AlgoLab to be a place to store projects of mine.  I love Physics and Coding, I also have expereince teaching. This project is here for those of you who did not attend grad school for Computer Science,  but are still interested in learning applied Machine Vision and Learning.
