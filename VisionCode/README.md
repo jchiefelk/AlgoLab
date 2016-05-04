@@ -1,17 +1,18 @@
-<h2> Algorithms </h2>
+<h2> OpenCV in Xcode 7</h2>
 
 <p>
-I started The AlgoLab to be a place to store projects of mine.  I love Physics and Coding, I also have expereince teaching. This project is here for those of you who did not attend grad school for Computer Science,  but are still interested in learning applied Machine Vision and Learning.
+It iss a pain in the ass linking the OpenCV library in Xcode 7.  Took a few hours to get going.  To save others from this time-suck in the future, here is what you have to get going.  These same instructions will get OpenCV working in an openFrameworks Xcode project/
 </p>
 
+
+<h4>
+1) Other Linker Flags 
+</h4>
 <p>
-The first lessons are here to demonstrate how to use Python along with OpenCV to perform feature and face detection from a live video feed on your laptop. Eventually we will teach you how to use equations from a disipline of Physics called Statistical Mechanics to detect soft matter in a live video stream, and to perform micro expression analysis.
+Copy and paste the following flags, and in Xcode and paste into Other Linker Flags.
 </p>
 
-<h3>Lessons</h3>
+<pre>
+-lopencv_calib3d -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_highgui -lopencv_imgproc -lopencv_ml -lopencv_objdetect -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
+</pre>
 
-<a href="https://github.com/jchiefelk/Algorithms/tree/master/feature_selection">1) Feature Selection</a>
-
-<a href="https://github.com/jchiefelk/Algorithms/tree/master/facerecognition">2) Face Recognition</a>
-
-<a href="https://github.com/jchiefelk/AlgoLab/tree/master/softmatter">3) Soft Matter Detection</a>
