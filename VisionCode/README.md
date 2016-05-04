@@ -1,7 +1,7 @@
 <h2> OpenCV in Xcode 7</h2>
 
 <p>
-It iss a pain in the ass linking the OpenCV library in Xcode 7.  Took a few hours to get going.  To save others from this time-suck in the future, here is what you have to get going.  These same instructions will get OpenCV working in an openFrameworks Xcode project/
+It is a pain in the ass linking the OpenCV library in Xcode 7, when it is your first time.  To save others from this time-suck in the future, here is what you have to do.  These same instructions will get OpenCV working in an openFrameworks Xcode project.
 </p>
 
 <h4>
