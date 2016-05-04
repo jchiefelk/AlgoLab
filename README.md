@@ -14,4 +14,6 @@ The first lessons are here to demonstrate how to use Python along with OpenCV to
 
 <a href="https://github.com/jchiefelk/Algorithms/tree/master/facerecognition">2) Face Recognition</a>
 
-<a href="https://github.com/jchiefelk/AlgoLab/tree/master/softmatter">3) Soft Matter Detection</a>
+<a href="https://github.com/jchiefelk/AlgoLab/tree/master/VisionCode">3) OpenCV settup in Xcode</a>
+
+<a href="https://github.com/jchiefelk/AlgoLab/tree/master/softmatter">4) Soft Matter Detection</a>
