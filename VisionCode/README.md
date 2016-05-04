@@ -6,7 +6,7 @@ It iss a pain in the ass linking the OpenCV library in Xcode 7.  Took a few hour
 
 
 <h4>
-1) Other Linker Flags 
+1) Set Other Linker Flags 
 </h4>
 <p>
 Copy and paste the following flags, and in Xcode and paste into Other Linker Flags.
@@ -16,3 +16,10 @@ Copy and paste the following flags, and in Xcode and paste into Other Linker Fla
 -lopencv_calib3d -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_highgui -lopencv_imgproc -lopencv_ml -lopencv_objdetect -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
 </pre>
 
+<h4>
+2) Set Include Library Path
+</h4>
+
+<h4>
+3) Set Include Header Path
+</h4>
