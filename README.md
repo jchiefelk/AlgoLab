@@ -16,6 +16,6 @@ I started The AlgoLab to as a place to store projects of mine.  I love Physics a
 
 <a href="https://github.com/jchiefelk/AlgoLab/tree/master/VisionCode">3) OpenCV setup in Xcode</a>
 
-<a>4) Detecting moving objects from a live video feed</a>
+<a>4) Detecting moving objects from a live video feed - Coming Soon</a>
 
 <a href="https://github.com/jchiefelk/AlgoLab/tree/master/softmatter">5) Soft Matter Detection - Coming Soon</a>
