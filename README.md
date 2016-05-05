@@ -1,11 +1,11 @@
 <h2> AlgoLab </h2>
 
 <p>
-I started The AlgoLab to be a place to store projects of mine.  I love Physics and Coding, I also have expereince teaching. This project is here for those of you who did not attend grad school for Computer Science,  but are still interested in learning applied Machine Vision and Learning.
+I started The AlgoLab to as a place to store projects of mine.  I love Physics and Coding, I enyoy teaching, and the AlgoLab is union of these interests.  I did not recieve a formal education in Computer Science, my background is in Biophysics and Biochemistry (I have 2 Masters of Science Degrees). The projectsstored on AlgoLab are experiments on the use mathematics from a discipline called Statistical Physics to detect patterns and correlations in the scenes of a live video feed.  
 </p>
 
 <p>
-The first lessons are here to demonstrate how to use Python along with OpenCV to perform feature and face detection from a live video feed on your laptop. Eventually we will teach you how to use equations from a disipline of Physics called Statistical Mechanics to detect soft matter in a live video stream, and to perform micro expression analysis.
+
 </p>
 
 <h3>Lessons</h3>
@@ -16,4 +16,6 @@ The first lessons are here to demonstrate how to use Python along with OpenCV to
 
 <a href="https://github.com/jchiefelk/AlgoLab/tree/master/VisionCode">3) OpenCV setup in Xcode</a>
 
-<a href="https://github.com/jchiefelk/AlgoLab/tree/master/softmatter">4) Soft Matter Detection</a>
+<a>4) Detecting moving objects from a live video feed</a>
+
+<a href="https://github.com/jchiefelk/AlgoLab/tree/master/softmatter">5) Soft Matter Detection - Coming Soon</a>
