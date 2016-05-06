@@ -1,7 +1,7 @@
 
 <h1>Soft Matter Detection</h1>
 <p>
-We define soft matter as a deformable piece of matter, like a plastic bag, tumbleweed, hair, cloth, etc.  Soft matter detection is an active area of reasearch in Machine Vision.  We consider a case example for self-driving cars for this tutorial.
+Soft Matter is a deformable piece of matter, like a plastic bag, tumbleweed, hair, cloth, etc.  We consider a case example for self-driving cars for this tutorial.
 </p> 
 
 <h3>Example</h3>
