@@ -1,11 +1,7 @@
 <h2> AlgoLab </h2>
 
 <p>
-I started The AlgoLab to as a place to store projects of mine.  I love Physics and Coding, I enyoy teaching, and the AlgoLab is union of these interests.  I did not recieve a formal education in Computer Science, my background is in Biophysics and Biochemistry (I have 2 Masters of Science Degrees). The projectsstored on AlgoLab are experiments on the use mathematics from a discipline called Statistical Physics to detect patterns and correlations in the scenes of a live video feed.  
-</p>
-
-<p>
-
+I started The AlgoLab to as a place to store projects of mine.  I love Physics and Coding, I enyoy teaching, and the AlgoLab is union of these interests.  I did not recieve a formal education in Computer Science, my background is in Biophysics and Biochemistry (I have MS Degrees in both). The projects stored on AlgoLab are experiments on the use of Statistical Physics to detect patterns and correlations in a live video feed.  
 </p>
 
 <h3>Lessons</h3>
