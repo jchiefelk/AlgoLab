@@ -9,6 +9,7 @@ FAST is great because its FREE, and its very efficient.  The C++ code below will
 </p>
 
 <pre>
+
 #include <iostream>
 #include <fstream>
 #include <opencv2/opencv.hpp>
