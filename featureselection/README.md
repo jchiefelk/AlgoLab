@@ -1,7 +1,7 @@
 <h2> Feature Selection </h2>
 
 <p>
-So after some research on several interest point detection algorithms OpenCV offers, our conlcusion is that FAST is best for my needs.  I experimented with both Harris and SIFT.  Harris can be slow, and the number of interest points it detects relative to SIFT at the same speed is subpar.  SIFT is not ideal for my use because it costs money to use in commericial applications, yeah fuck that shit.
+After some research on several interest point detection algorithms that OpenCV offers, our conlcusion is that FAST is best for my needs.  I experimented with both Harris and SIFT.  Harris can be slow, and the number of interest points it detects relative to SIFT, is subpar.  SIFT is not ideal for my use because it costs money to use in commericial applications, fuck that shit.
 </p>
 
 <p>
