@@ -15,6 +15,8 @@ The projects stored on AlgoLab are experiments on the use of Statistical Physics
 
 <a href="https://github.com/jchiefelk/AlgoLab/tree/master/VisionCode">3) OpenCV setup in Xcode</a>
 
-<a>4) Detecting moving objects from a live video feed - Coming Soon</a>
+<a href="https://github.com/jchiefelk/AlgoLab/tree/master/ofAlgoLab">4)OpenCV in OpenFrameworks</a>
 
-<a href="https://github.com/jchiefelk/AlgoLab/tree/master/softmatter">5) Soft Matter Detection - Coming Soon</a>
+<a>5) Detecting moving objects from a live video feed - Coming Soon</a>
+
+
