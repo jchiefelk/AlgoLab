@@ -1,7 +1,7 @@
 <h2> AlgoLab </h2>
 
 <p>
-I started the AlgoLab as a place to store Machine Vision projects using OpenCV.  I'm not formally educated in Computer Science, my background is in Biophysics and Biochemistry, I have MS Degrees in both. You can check out my professional background <a href="https://www.linkedin.com/in/jchiefelk">here, if you want.</a>  I have also built an Android and iOS app from inception to launch, and succesfully deployed to the Google and Apple app stores <a href="http://www.activily.com/">www.activily.com</a> 
+I started the AlgoLab as a place to store Machine Vision projects using OpenCV.  I'm not formally educated in Computer Science, my background is in Biophysics and Biochemistry, I have MS Degrees in both. You can check out my professional background <a href="https://www.linkedin.com/in/jchiefelk">here, if you want.</a>   
 </p>
 <p>
 The projects stored on AlgoLab are experiments on the application of a branch of Physics, called Statistical Mechanics, on pattern detection from live video.  The inspiration from this project came from work I did in Grad School for the <a href="http://scipp.ucsc.edu/groups/Neuroproject/index2.html"> NeuroProject </a> at UC Santa Cruz.   
