@@ -4,7 +4,7 @@
 I started the AlgoLab as a place to store projects of mine.  I love Physics and Coding, I enyoy teaching, and the AlgoLab is union of these interests.  I'm not formally educated in Computer Science, my background is in Biophysics and Biochemistry. I have MS Degrees in both. You can check out my professional background <a href="https://www.linkedin.com/in/jchiefelk">here, if you want.</a> 
 </p>
 <p>
-The projects stored on AlgoLab are experiments on the use of Statistical Physics to detect patterns and correlations from a live video feed.  The inspiration from this project came from work I did in Grad School for the <a href="http://scipp.ucsc.edu/groups/Neuroproject/index2.html"> NeuroProject </a> at UC Santa Cruz.   
+The projects stored on AlgoLab are experiments on the application of a branch of Physics, called Statistical Mechanics, on pattern detection from a live video feed.  The inspiration from this project came from work I did in Grad School for the <a href="http://scipp.ucsc.edu/groups/Neuroproject/index2.html"> NeuroProject </a> at UC Santa Cruz.   
 </p>
 
 <h3>Lessons</h3>
