@@ -15,7 +15,6 @@ class VideoThread: public ofThread
     public:
     VideoFeed Video;
     
-    
     /// Start the thread.
     void start()
     {

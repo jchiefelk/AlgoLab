@@ -9,27 +9,29 @@
 #include <stdio.h>
 
 void VideoFeed::start(){
-    CvCapture* capture;
-    Mat frame;
-    //-- 2. Read the video stream
-	   capture = cvCaptureFromCAM( -1 );
-	   if( capture )
-       {
-           while( true )
-           {
-               frame = cvQueryFrame( capture );
-               
-               //-- 3. Apply the classifier to the frame
-               if( !frame.empty() )
-               { imshow("OpenCV Video Feed", frame ) ; }
-               else
-               { printf(" --(!) No captured frame -- Break!"); break; }
-               
-               int c = waitKey(10);
-               if( (char)c == 'c' ) { break; }
-           }
-       }
-	   return 0;
+    // Open the first camera attached to your computer
+    cv::VideoCapture cap(0);
+    if(!cap.isOpened()) {
+        std::cout << "Unable to open the camera\n";
+        std::exit(-1);
+    }
+    
+    cv::Mat image;
+    double FPS = 24.0;
+    // Read camera frames (at approx 24 FPS) and show the result
+    while(true) {
+        cap >> image;
+        if(image.empty()) {
+            std::cout << "Can't read frames from your camera\n";
+            break;
+        }
+        
+        cv::imshow("Camera feed", image);
+        
+        // Stop the camera if users presses the "ESC" key
+        if(cv::waitKey(1000.0/FPS) == 27) break;
+    }
+    return 0;
 }
 
 void VideoFeed::ipcapture() {
@@ -37,6 +39,7 @@ void VideoFeed::ipcapture() {
     vector<cv::KeyPoint>::iterator it;
     vector<cv::Point2f> points;
     int threshold=15;
+    cout << threshold;
     for(;;)
     {
         
