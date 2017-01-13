@@ -19,22 +19,7 @@ char* corners_window = "Corners detected";
 void cornerHarris_demo( int, void* );
 void detectAndDisplay(Mat frame);
 string window_name = "Capture - Face detection";
-/*******
-int main(int argc, char** argv){
 
-	/// Load source image and convert it to gray
-  	// src = imread( argv[1], 1 );
-  	src = frame;
-  cvtColor( src, src_gray, CV_BGR2GRAY );
-  /// Create a window and a trackbar
-  namedWindow( source_window, CV_WINDOW_AUTOSIZE );
-  // createTrackbar( "Threshold: ", source_window, &thresh, max_thresh, cornerHarris_demo );
-  // imshow( source_window, src );
-  cornerHarris_demo( 0, 0 );
-  waitKey(0);
-  return(0);
-}
-********/
 //
 //Main
 //

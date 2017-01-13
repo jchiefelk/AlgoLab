@@ -1,1 +1,1 @@
-g++ video.cpp -o test `pkg-config --libs --cflags opencv`
+g++ dynamic_FAST.cpp -o fast `pkg-config --libs --cflags opencv`

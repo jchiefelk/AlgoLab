@@ -1,50 +1,5 @@
-<h2> Feature Selection </h2>
+<h2> Feature Detection </h2>
 
 <p>
-After some research on several interest point detection algorithms that OpenCV offers, our conlcusion is that FAST is best for my needs.  I experimented with both Harris and SIFT.  Harris can be slow, and the number of interest points it detects relative to SIFT, is subpar.  SIFT is not ideal for my use because it costs money to use in commericial applications, fuck that shit.
+Here we will be using Python and OpenCV to detect Points of Interest from a live video feed.  Specifically we use the SIFT algorithm to detect edges from the frames of a live video feed.  You will notice that the process is somewhat slow, and that is most likely due to the fact that we are using Python.  In future sections we will use C++ to get a performance boost.
 </p>
-
-<p>
-FAST is great because its FREE, and it is very efficient.  The C++ code below will detect interst points from your Laptops camera.
-</p>
-
-<pre>
-
-#include <opencv2/opencv.hpp>
-#include "opencv2/nonfree/nonfree.hpp"
-#include "opencv2/highgui/highgui.hpp"
-
-using namespace std;
-using namespace cv;
-  
-int main(int, char**)
-{
-    VideoCapture cap(0); // open the default camera
-    if(!cap.isOpened()){  
-        return -1; // check if we succeeded
-    }
-    // cout << "rows :" << frame.rows << "\n";
-    Mat src, dest;
-    cout << src.rows << "\n";
-    vector<KeyPoint> keypoints;
-    vector<cv::KeyPoint>::iterator it;
-    vector<cv::Point2f> points;
-    ofstream outfile1,outfile2,outfile3;
-    int threshold=5;
-    for(;;)
-    {
-        Mat frame;
-        cap >> frame; // get a new frame from camera
-        src = frame;
-        cvtColor(src, src, CV_BGR2GRAY);
-        GaussianBlur(src, src, Size(7,7), 1.5, 1.5);
-        FAST(src,keypoints,threshold,true);
-        drawKeypoints(src, keypoints, dest);
-        imshow("FAST", dest);
-        if(waitKey(30) >= 0) break;
-    }
-    // the camera will be deinitialized automatically in VideoCapture destructor
-    return 0;
-}
-</pre>
-
