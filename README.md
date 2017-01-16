@@ -12,4 +12,4 @@ The motivation for this project came from work I did in Grad School for the <a h
 
 <p><a href="https://github.com/jchiefelk/AlgoLab/tree/master/VisionCode">1) OpenCV setup in Xcode</a></p>
 
-<p><a href="https://github.com/jchiefelk/AlgoLab/tree/master/ofAlgoLab">2) OpenCV in OpenFrameworks</a> - Divide tasks of gathering data from live video feed and application of face detection algorithms into seperarte threads</p>
+<p><a href="https://github.com/jchiefelk/AlgoLab/tree/master/ofAlgoLab">2) OpenCV in OpenFrameworks</a> - Divide tasks of gathering data from live video feed, and object detection into seperarte threads</p>
