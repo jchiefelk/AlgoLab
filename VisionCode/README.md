@@ -1,7 +1,11 @@
-<h2> OpenCV in Xcode 7</h2>
+<h2> OpenCV in Xcode 8</h2>
 
 <p>
-It is a pain in the ass linking the OpenCV library in Xcode 7, when it is your first time.  To save others from this time-suck in the future, here is what you have to do.  These same instructions will get OpenCV working in an openFrameworks Xcode project.
+It is a pain in the ass linking the OpenCV library in Xcode 8, when it is your first time.  To save others from this time-suck in the future, here is what you have to do.  These same instructions will get OpenCV working in an openFrameworks Xcode project.
+</p>
+
+<p>
+First off, DO NOT use Homebrew to install OpenCV on your machine.  Instead, use <pre>cmake</pre>.  You can find the prescribed Cmake instructions by the immensely skilled <a href="http://charliegerard.github.io/blog/Installing-OpenCV"/>Charlie Gerard</a>
 </p>
 
 <h4>
