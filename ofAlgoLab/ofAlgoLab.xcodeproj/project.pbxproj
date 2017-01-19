@@ -58,7 +58,6 @@
 		7A60378A1E29468200255484 /* libopencv_videostab.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6037201E293E0700255484 /* libopencv_videostab.3.2.dylib */; };
 		7A60378B1E29468200255484 /* libopencv_videostab.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6037211E293E0700255484 /* libopencv_videostab.dylib */; };
 		7A60378C1E29468900255484 /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
-		7A65B8B81CDAB87700F7484A /* video.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7A65B8B61CDAB87700F7484A /* video.cpp */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
 		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
 /* End PBXBuildFile section */
@@ -145,10 +144,7 @@
 		7A6037211E293E0700255484 /* libopencv_videostab.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_videostab.dylib; path = Frameworks/libopencv_videostab.dylib; sourceTree = "<group>"; };
 		7A6037541E29447400255484 /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
 		7A6037561E2944BA00255484 /* cv2.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; name = cv2.so; path = ../../../../AlgoLab/VisionCode/VisionCode/Frameworks/cv2.so; sourceTree = "<group>"; };
-		7A65B8B61CDAB87700F7484A /* video.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = video.cpp; sourceTree = "<group>"; };
-		7A65B8B71CDAB87700F7484A /* video.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = video.hpp; sourceTree = "<group>"; };
 		7A65B8B91CDAC03B00F7484A /* videothread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = videothread.h; sourceTree = "<group>"; };
-		7A65B8BA1CDACCAA00F7484A /* ipthread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ipthread.h; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E4B69B5B0A3A1756003C02F2 /* ofAlgoLabDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ofAlgoLabDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
@@ -323,9 +319,6 @@
 				7A65B8B91CDAC03B00F7484A /* videothread.h */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
-				7A65B8B61CDAB87700F7484A /* video.cpp */,
-				7A65B8B71CDAB87700F7484A /* video.hpp */,
-				7A65B8BA1CDACCAA00F7484A /* ipthread.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -428,7 +421,6 @@
 			files = (
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
-				7A65B8B81CDAB87700F7484A /* video.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

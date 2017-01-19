@@ -14,15 +14,21 @@ class IPThread: public ofThread
 {
 public:
     VideoFeed Video;
-    
+    Mat image;
     
     /// Start the thread.
     void start()
     {
         // Mutex blocking is set to true by default
         // It is rare that one would want to use startThread(false).
+       
         startThread();
-        Video.ipcapture();
+        cout << "Second Thread Test Test";
+        if(image.empty()) {
+            std::cout << "Can't read frames from your camera\n";
+        }
+        // Video.ipcapture(image);
+        // image =
     }
     
     /// Signal the thread to stop.  After calling this method,
@@ -32,7 +38,6 @@ public:
     {
         stopThread();
     }
-    
     /// Our implementation of threadedFunction.
     void threadedFunction()
     {
@@ -43,13 +48,9 @@ public:
             {
                 // The mutex is now locked and the "count"
                 // variable is protected.  Time to modify it.
-                
-                
-                
                 // Unlock the mutex.  This is only
                 // called if lock() returned true above.
                 unlock();
-                
                 // Sleep for 1 second.
                 sleep(1000);
             }
@@ -63,7 +64,4 @@ public:
         }
     }
    
-    
-    
-    
 };

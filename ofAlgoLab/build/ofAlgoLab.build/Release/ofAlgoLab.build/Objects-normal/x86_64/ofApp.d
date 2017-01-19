@@ -553,7 +553,6 @@ dependencies: \
   ../../../libs/openFrameworks/3d/ofCamera.h \
   ../../../libs/openFrameworks/3d/ofEasyCam.h \
   /Users/ggt/independent/of_v0.9.8_osx_release/apps/myApps/ofAlgoLab/src/videothread.h \
-  /Users/ggt/independent/of_v0.9.8_osx_release/apps/myApps/ofAlgoLab/src/video.hpp \
   /usr/local/include/opencv2/opencv.hpp \
   /usr/local/include/opencv2/opencv_modules.hpp \
   /usr/local/include/opencv2/core.hpp \
@@ -672,5 +671,4 @@ dependencies: \
   /usr/local/include/opencv2/videostab/deblurring.hpp \
   /usr/local/include/opencv2/videostab/wobble_suppression.hpp \
   /usr/local/include/opencv2/videostab/ring_buffer.hpp \
-  /usr/local/include/opencv2/highgui/highgui.hpp \
-  /Users/ggt/independent/of_v0.9.8_osx_release/apps/myApps/ofAlgoLab/src/ipthread.h
+  /usr/local/include/opencv2/highgui/highgui.hpp

@@ -8,59 +8,43 @@
 
 #pragma once
 #include "ofThread.h"
-#include "video.hpp"
+#include "ofApp.h"
+#include "ofMain.h"
+#include "ofImage.h"
+#include <stdio.h>
+#include <opencv2/opencv.hpp>
+#include "opencv2/highgui/highgui.hpp"
+#include <iostream>
+using namespace std;
+using namespace cv;
+
 
 class VideoThread: public ofThread
 {
-    public:
-    VideoFeed Video;
-    
-    /// Start the thread.
-    void start()
-    {
-        // Mutex blocking is set to true by default
-        // It is rare that one would want to use startThread(false).
-        startThread();
-        Video.start();
-    }
-    
-    /// Signal the thread to stop.  After calling this method,
-    /// isThreadRunning() will return false and the while loop will stop
-    /// next time it has the chance to.
-    void stop()
-    {
-        stopThread();
-    }
-    
-    /// Our implementation of threadedFunction.
-    void threadedFunction()
-    {
-        while(isThreadRunning())
-        {
-            // Attempt to lock the mutex.  If blocking is turned on,
-            if(lock())
-            {
-                // The mutex is now locked and the "count"
-                // variable is protected.  Time to modify it.
-                
 
-                
-                // Unlock the mutex.  This is only
-                // called if lock() returned true above.
-                unlock();
-                
-                // Sleep for 1 second.
-                sleep(1000);
-            }
-            else
-            {
-                // If we reach this else statement, it means that we could not
-                // lock our mutex, and so we do not need to call unlock().
-                // Calling unlock without locking will lead to problems.
-                ofLogWarning("threadedFunction()") << "Unable to lock mutex.";
-            }
-        }
+public:
+    
+    ofVideoGrabber cam;
+    ofPixels pixels;
+    Mat image;
+    
+    VideoThread() {
+        cam.initGrabber(1280,720,false);
+        cam.setDesiredFrameRate(30);
     }
     
+    void threadedFunction() {
+        while(isThreadRunning()) {
+            cam.update();
+            if(cam.isFrameNew()) {
+                lock();
+                pixels = cam.getPixels();
+                ofPixels & data = cam.getPixels();
+                auto img = cv::Mat(720, 1280, CV_8UC1, pixels.getData());
+                image = img;
+                unlock();
+            }	  
+        }  
+    }
     
 };

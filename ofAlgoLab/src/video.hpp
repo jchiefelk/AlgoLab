@@ -23,7 +23,7 @@ public:
     Mat src,dest;
     // Functions
     void start();
-    void ipcapture();
+    void ipcapture(Mat image);
 };
 
 #endif /* vision_hpp */

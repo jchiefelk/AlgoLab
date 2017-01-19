@@ -15,7 +15,7 @@ void VideoFeed::start(){
         std::cout << "Unable to open the camera\n";
         std::exit(-1);
     }
-    
+    // cout << "TEST TEST TEST TEST";
     cv::Mat image;
     double FPS = 24.0;
     // Read camera frames (at approx 24 FPS) and show the result
@@ -25,35 +25,18 @@ void VideoFeed::start(){
             std::cout << "Can't read frames from your camera\n";
             break;
         }
-        
-        cv::imshow("Camera feed", image);
-        
+        VideoFeed::src = image;
+       // cout << VideoFeed::src;
+        //cv::imshow("Camera feed", image);
         // Stop the camera if users presses the "ESC" key
         if(cv::waitKey(1000.0/FPS) == 27) break;
     }
     return 0;
 }
 
-void VideoFeed::ipcapture() {
+void VideoFeed::ipcapture(Mat image) {
     vector<KeyPoint> keypoints;
     vector<cv::KeyPoint>::iterator it;
     vector<cv::Point2f> points;
-    int threshold=15;
-    cout << threshold;
-    for(;;)
-    {
-        
-        cvtColor(src, src, CV_BGR2GRAY);
-        GaussianBlur(src, src, Size(7,7), 1.5, 1.5);
-        Canny(src, src, 0, 30, 3);
-        FAST(src,keypoints,threshold,true);
-        drawKeypoints(src, keypoints, dest);
-        for(it=keypoints.begin(); it!=keypoints.end();it++){
-            points.push_back(it->pt);
-        }
-        Mat pointmatrix(points);
-        imshow("FAST", src);
-        if(waitKey(30) >= 0) break;
-    }
     
 }
