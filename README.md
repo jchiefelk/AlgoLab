@@ -10,6 +10,10 @@ The motivation for this project came from work I did in Grad School for the <a h
 
 <h3>Lessons</h3>
 
+<h4>Part 1</h4>
+
 <p><a href="https://github.com/jchiefelk/AlgoLab/tree/master/VisionCode">1) OpenCV setup in Xcode</a></p>
 
 <p><a href="https://github.com/jchiefelk/AlgoLab/tree/master/ofAlgoLab">2) OpenCV in OpenFrameworks</a> - Divide tasks of gathering data from live video feed, and FAST object detection algorithm into seperarte threads</p>
+
+<p>The conclusion of implementing threading, using ofThread, did NOT increase performance of the data collection. Fast when running as single thread.</p>
