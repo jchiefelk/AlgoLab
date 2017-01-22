@@ -5,7 +5,7 @@ It is a pain in the ass linking the OpenCV library in Xcode 8, when it is your f
 </p>
 
 <p>
-First off, DO NOT use Homebrew to install OpenCV on your machine.  Instead, use <pre>cmake</pre>.  You can find the prescribed cmake instructions prepared by the immensely skilled <a href="http://charliegerard.github.io/blog/Installing-OpenCV"/>Charlie Gerard, here</a>
+First off, DO NOT use Homebrew to install OpenCV on your machine.  Instead, use cmake.  You can find the prescribed cmake instructions prepared by the immensely skilled <a href="http://charliegerard.github.io/blog/Installing-OpenCV"/>Charlie Gerard, here</a>
 </p>
 
 <h4>
