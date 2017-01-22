@@ -118,4 +118,5 @@ dependencies: \
   /usr/local/include/opencv2/videostab/deblurring.hpp \
   /usr/local/include/opencv2/videostab/wobble_suppression.hpp \
   /usr/local/include/opencv2/videostab/ring_buffer.hpp \
-  /usr/local/include/opencv2/highgui/highgui.hpp
+  /usr/local/include/opencv2/highgui/highgui.hpp \
+  /Users/ggt/independent/AlgoLab/VisionCode/VisionCode/haarwavelet.hpp

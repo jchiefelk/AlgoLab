@@ -10,11 +10,21 @@
 #include <opencv2/opencv.hpp>
 #include "opencv2/highgui/highgui.hpp"
 #include <fstream>
+#include "haarwavelet.hpp"
+
+#define CAMERA_WIDTH   1280
+#define CAMERA_HEIGHT 720
 using namespace std;
 using namespace cv;
 
 
 int main() {
+    
+        // setup Haar detetection Windows
+        int width = CAMERA_WIDTH/8;
+        int height = CAMERA_HEIGHT/8;
+        int HaarWindows  [height][width];
+
          // Open the first camera attached to your computer
          cv::VideoCapture cap(0);
          if(!cap.isOpened()) {
@@ -45,17 +55,15 @@ int main() {
                 drawKeypoints(src, keypoints, dest);
                 imshow("Camera feed", dest);
                 // Print Keypoints to File
-             
                 for(it=keypoints.begin(); it!=keypoints.end();it++){
                  points.push_back(it->pt);
                 }
                 Mat pointmatrix(points);
-                outfile1.open("points.txt");
-                outfile1 << pointmatrix;
-                outfile1.close();
+                // outfile1.open("points.txt");
+                // outfile1 << pointmatrix;
+                // outfile1.close();
                  // Stop the camera if users presses the "ESC" key
                  if(waitKey(1000.0/FPS) == 27) break;
              }
-     
          return 0;
 }
